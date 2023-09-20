@@ -1,0 +1,10 @@
+@mixin clearfix() { // this mixin is used to clear floats and make sure that the parent element contains the floated elements
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
