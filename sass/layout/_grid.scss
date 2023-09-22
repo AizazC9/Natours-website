@@ -1,5 +1,6 @@
 .row{
     max-width: $grid-width;
+    // background-color: greenyellow;
     margin: 0 auto;
 
     &:not(:last-child){ // select everything except last child

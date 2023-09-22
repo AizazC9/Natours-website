@@ -1,0 +1,92 @@
+.popup{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .8);
+    z-index: 9999;
+    opacity: 0; // it make your popup invisible but it still takes up space and content is still accessible
+    visibility: hidden; // to make the popup invisible but it content not accessible
+    transition: all .3s;
+    &:target{  // to make the popup visible when the url is changed to #popup
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__content{
+       @include absCenter();
+        width: 75%;
+        // height: 50rem;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        border-radius: 3px;
+        display: table;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .5s .2s;
+    }
+
+    &__left{
+        width: 33.333333%;
+        display: table-cell;
+    }
+
+    &__right{
+        width: 66.666667%;
+        display: table-cell;  // to make the content vertically centered
+        vertical-align: middle;  // to make the content vertically centered
+        padding: 3rem 5rem;
+    }
+
+    &__img{
+        display: block;
+        width: 100%;
+    }
+
+    &__text{
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        column-count: 2;
+        column-gap: 4rem;
+        -moz-column-count: 2;  // to make the text in two columns
+        -moz-column-gap: 4rem;  
+        -webkit-column-count: 2;  // to make the text in two columns
+        column-rule: 1px solid $color-grey-light-2; // 
+        -moz-column-rule: 1px solid $color-grey-light-2;  //
+        -webkit-column-rule: 1px solid $color-grey-light-2;  //
+
+        hyphens: auto;  
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+
+    }
+
+&:target &__content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+    &__close{
+        &:link,
+        &:visited{
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            height: 3rem;
+            width: 3rem;
+            font-size: 3rem;
+            line-height: 1;
+            display: inline-block;
+            color: $grey-dark;
+            text-decoration: none;
+            transition: all .3s;
+        }
+        &:hover{
+            cursor: pointer;
+            color: $color-primary;
+        }
+    }
+}
