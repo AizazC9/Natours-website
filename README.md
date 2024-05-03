@@ -17,14 +17,29 @@ This frontend application is built using modern web development technologies suc
 
 Below are some screenshots showcasing the user interface of the Trip Booking Website:
 
-![Homepage](screenshots/homepage.png)
+![Homepage](img/net%20page.png)
 *Figure 1: Homepage displaying featured trips*
 
-![Trip Details](screenshots/trip_details.png)
-*Figure 2: Trip details page with itinerary and pricing information*
+![Navigation](img/button.png)
+*Figure 2: Navigation features*
 
-![Booking Process](screenshots/booking_process.png)
-*Figure 3: Booking process with user details and payment options*
+![Benefits](img/card%20one.png)
+*Figure 3: Benefits of the trip*
+
+![Trip Details](img/card%202.png)
+*Figure 4: Trip details page with itinerary and pricing information*
+
+![Details](img/exiting.png)
+*Figure 5: General information about places and their images*
+
+![Reviews](img/people.png)
+*Figure 6: People stories about their experience on the trip*
+
+![Booking Process](img/booking.png)
+*Figure 7: Booking process with user details and payment options*
+
+![Footer](img/footer.png)
+*Figure 8: Information of website and links of different social links*
 
 ## Contributing
 
